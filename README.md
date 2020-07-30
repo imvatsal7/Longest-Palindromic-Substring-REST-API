@@ -5,6 +5,7 @@ so that the application can be run without needing an external database.
 Providing suitable database properties in application.properties file will ensure that the application works with an external database.
 
 The commands for the given endpoints are - 
+
 curl --location --request PUT 'localhost:8080/savePalindrome?_s_=vatsal'
 
 curl --location --request GET 'localhost:8080/getPalindrome?_s_=randomness'
