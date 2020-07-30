@@ -41,7 +41,7 @@ public class PalindromeServiceImpl implements PalindromeService {
             isPalindrome[i][i] = true;
             for(int j = 0; j < i; j++) {
                 if(_s_.charAt(i) == _s_.charAt(j) && (i - j <= 2 || isPalindrome[j+1][i-1])) {
-                    isPalindrome[i][j] = true;
+                    isPalindrome[j][i] = true;
                     if(i - j + 1 > maxLength) {
                         maxLength = i - j + 1;
                         leftIndex = j;
