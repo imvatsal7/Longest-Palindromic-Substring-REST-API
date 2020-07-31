@@ -1,4 +1,4 @@
-# Longest-Palindromic-Substring-REST-API
+# Longest-Palindromic-Substring-API
 The project involves getting string from a user at one endpoint. Longest Palindromic substring is calculated for the input string. 
 The second endpoint returns this palindromic string back to the user in JSON format. The database used is an in-memory mongo database
 so that the application can be run without needing an external database.
