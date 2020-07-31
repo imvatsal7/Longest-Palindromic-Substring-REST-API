@@ -1,3 +1,7 @@
+/*
+Business layer used to calculate the longest palindromic substring for a given string,
+also returns palindrome for a user-inputted string
+ */
 package com.example.demo.service.impl;
 
 import com.example.demo.repo.PalindromeRepo;

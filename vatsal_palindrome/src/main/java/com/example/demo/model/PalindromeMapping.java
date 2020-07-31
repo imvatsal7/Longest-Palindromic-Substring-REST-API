@@ -1,8 +1,10 @@
+/*
+Model -> Palindrome mapping consisting of a string => input and a string => palindrome
+that is computed inside the service class.
+ */
 package com.example.demo.model;
 
-import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.index.Indexed;
 
 public class PalindromeMapping{
 

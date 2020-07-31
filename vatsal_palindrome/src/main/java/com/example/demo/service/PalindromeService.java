@@ -1,3 +1,6 @@
+/*
+Abstraction layer for teh actual service class.
+ */
 package com.example.demo.service;
 
 import com.example.demo.model.PalindromeMapping;

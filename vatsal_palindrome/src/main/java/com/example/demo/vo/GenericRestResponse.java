@@ -1,3 +1,6 @@
+/*
+Generic response created.
+ */
 package com.example.demo.vo;
 
 public class GenericRestResponse {

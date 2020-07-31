@@ -20,6 +20,7 @@ public class PalindromeController {
     @PutMapping(value = "/savePalindrome")
     public GenericRestResponse savePalindrome(@RequestParam String _s_){
 
+        // validating to see if user gave correct input for the string
         validateIncomingString(_s_);
 
         try{
@@ -30,7 +31,6 @@ public class PalindromeController {
         }
 
         return new GenericRestResponse("400","Some exception occurred, please contact the administrator");
-        //throw new BadRequestException("Some exception occurred");
     }
 
     @GetMapping(value = "/getPalindrome")
