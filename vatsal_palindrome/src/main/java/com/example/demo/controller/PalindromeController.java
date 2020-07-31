@@ -35,7 +35,7 @@ public class PalindromeController {
 
     @GetMapping(value = "/getPalindrome")
     public PalindromeMapping getPalindrome(@RequestParam String _s_){
-        
+
         return palindromeService.getPalindrome(_s_);
     }
 
