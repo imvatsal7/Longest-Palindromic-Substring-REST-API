@@ -4,6 +4,7 @@ also returns palindrome for a user-inputted string
  */
 package com.example.demo.service.impl;
 
+import com.example.demo.exception.ResourceNotFoundException;
 import com.example.demo.repo.PalindromeRepo;
 import com.example.demo.model.PalindromeMapping;
 import com.example.demo.service.PalindromeService;
@@ -29,7 +30,10 @@ public class PalindromeServiceImpl implements PalindromeService {
     @Override
     public PalindromeMapping getPalindrome(String _s_) {
         Optional<PalindromeMapping> mappingOptional = palindromeRepo.findById(_s_);
-        return mappingOptional.orElse(null);
+        if (!mappingOptional.isPresent()) {
+            throw new ResourceNotFoundException("No such string!");
+        }
+        return mappingOptional.get();
     }
 
     private String calculatePalindrome(String _s_) {

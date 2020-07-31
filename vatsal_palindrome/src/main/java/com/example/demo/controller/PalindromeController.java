@@ -35,12 +35,8 @@ public class PalindromeController {
 
     @GetMapping(value = "/getPalindrome")
     public PalindromeMapping getPalindrome(@RequestParam String _s_){
-        try{
-            return palindromeService.getPalindrome(_s_);
-        }catch (Exception e){
-            System.out.println("Exception occurred while getting palindrome for string -> " +_s_ + " with error " + e);
-        }
-        return null;
+        
+        return palindromeService.getPalindrome(_s_);
     }
 
     private void validateIncomingString(String _s_) throws BadRequestException {
